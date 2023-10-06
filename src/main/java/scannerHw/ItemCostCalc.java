@@ -40,7 +40,8 @@ public class ItemCostCalc {
         double totalCost = totalItemPrice + deliveryFee;
         System.out.println("Product      Qty      Price       Miles      Total"); //displaying output
         System.out.println("----         ---      -----      -----      -----"); //output after total
-        System.out.println(productName + "       " + quantity + "       " + totalItemPrice +  "       " + distance + "      " + totalCost);
+        System.out.printf("%-12s %-8d %.1f        %.1f        %.1f\n", productName,quantity, pricePerUnit,distance, totalPrice);
+        //System.out.println(productName + "       " + quantity + "       " + totalItemPrice +  "       " + distance + "      " + totalCost);
         System.out.println("\nThank you. Come Again!!!");
         scanner.close();
 
